@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: 0.2s linear;
+}
+
+body {
+    background-color: #222;
+    color: #fff;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    position: relative;
+    min-height: 100vh;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header .logo {
+    font-size: 2.5rem; 
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header .logo span {
+    color: #FFA500;
+}
+
+header .navbar {
+    display: flex;
+}
+
+header .navbar a {
+    font-size: 1.2rem; 
+    padding: 1rem;
+    color: #ccc;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+header .navbar a:hover {
+    color: #FFA500;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 7rem); 
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.home h1 {
+    font-size: 5rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.home h1 span {
+    background: linear-gradient(to right, #FFA500, #FF0000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.home p {
+    font-size: 1.5rem;
+    max-width: 50rem;
+    margin: 0 auto 4rem;
+}
+
+.home a.btn-menu {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: linear-gradient(to right, #FFA500, #FF0000);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.home a.btn-menu:hover {
+    background: linear-gradient(to right, #FF4500, #dcb714);
+}
+
+#bg-image {
+    background-image: url("https://images.pexels.com/photos/2098134/pexels-photo-2098134.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.3;
+}
+
+main.home {
+    padding-top: 7rem; 
+}
+
+.advertisement {
+    max-width: 60rem;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem;
+}
